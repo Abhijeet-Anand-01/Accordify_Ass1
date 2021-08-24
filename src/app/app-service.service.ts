@@ -5,9 +5,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class AppServiceService {
-  private shareEmployeeDetails = null;;
-  getData() { const data = this.shareEmployeeDetails; this.shareEmployeeDetails = null; return data; }
-  setData(value: any) { this.shareEmployeeDetails = value; }
+  // private shareEmployeeDetails = null;;
+  // getData() { const data = this.shareEmployeeDetails; this.shareEmployeeDetails = null; return data; }
+  // setData(value: any) { this.shareEmployeeDetails = value; }
 
   constructor(private http: HttpClient) { }
 

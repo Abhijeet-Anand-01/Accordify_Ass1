@@ -11,6 +11,7 @@ export class DashboardEmployeeComponent implements OnInit {
 
   searchEmployee = "";
   dataset = [];
+  isAddEnabled = false;
 
   constructor(private appService: AppServiceService, private route: Router) {
   }
@@ -18,19 +19,19 @@ export class DashboardEmployeeComponent implements OnInit {
   ngOnInit(): void {
     this.appService.getAllEmployeeDetails().subscribe((res: any) => {
       this.dataset = res;
-      let newOrModData = this.appService.getData();
-      if (newOrModData) {
-        if (newOrModData.employeeDetails.id) {
-          const index = this.dataset.findIndex(v => v.employeeDetails.id == newOrModData.employeeDetails.id);
-          console.log(index)
-          if (index >= 0)
-            this.dataset[index] = newOrModData;
-        } else {
-          newOrModData.employeeDetails.id = "E-id" + (this.dataset.length + 1);
-          newOrModData.laptopDetails.id = "L-id" + (this.dataset.length + 1);
-          this.dataset.push(newOrModData);
-        }
-      }
+      // let newOrModData = this.appService.getData();
+      // if (newOrModData) {
+      //   if (newOrModData.employeeDetails.id) {
+      //     const index = this.dataset.findIndex(v => v.employeeDetails.id == newOrModData.employeeDetails.id);
+      //     console.log(index)
+      //     if (index >= 0)
+      //       this.dataset[index] = newOrModData;
+      //   } else {
+      //     newOrModData.employeeDetails.id = "E-id" + (this.dataset.length + 1);
+      //     newOrModData.laptopDetails.id = "L-id" + (this.dataset.length + 1);
+      //     this.dataset.push(newOrModData);
+      //   }
+      //   }
     })
   }
 
@@ -39,14 +40,44 @@ export class DashboardEmployeeComponent implements OnInit {
     if (index >= 0)
       this.dataset.splice(index, 1);
   }
-
+  public currentEmployee: any;
+  public type = "Add";
   addEditEmployee(employeeD) {
-    if (!employeeD) {
-      this.appService.setData(null);
+    this.currentEmployee = {
+      "employeeDetails": {
+        "name": "",
+        "id": null
+      },
+      "laptopDetails": {
+        "name": "",
+        "id": null
+      }
+    };
+    if (employeeD) {
+      this.type = "Update";
+      this.currentEmployee = employeeD;
     }
-    else
-      this.appService.setData(employeeD);
-    this.route.navigate(["/addEmployee"]);
+    this.isAddEnabled = true;
+  }
+  saveEmployee() {
+    let newOrModData = this.currentEmployee;
+    console.log(this.currentEmployee)
+    if (newOrModData) {
+      if (newOrModData.employeeDetails.id) {
+        const index = this.dataset.findIndex(v => v.employeeDetails.id == newOrModData.employeeDetails.id);
+        if (index >= 0)
+          this.dataset[index] = newOrModData;
+
+        this.isAddEnabled = false;
+      } else {
+        newOrModData.employeeDetails.id = "E-id" + (this.dataset.length + 1);
+        newOrModData.laptopDetails.id = "L-id" + (this.dataset.length + 1);
+        this.dataset.push(newOrModData);
+        
+        this.isAddEnabled = false;
+      }
+    }
+
   }
 
 }
