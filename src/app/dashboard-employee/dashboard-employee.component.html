@@ -9,9 +9,10 @@
                 <label class="searchLabel" for="employeeSearch">Employee Id:</label>
                 <input class="searchField" type="text" name="employeeSearch" placeholder="Employee Id"
                     [(ngModel)]="searchEmployee">
-
                 <button class="addEmployee" (click)="addEditEmployee(null)">Add Employee</button>
             </div>
+
+            <!-- Employee Details -->
 
             <div class="gridDetails">
                 <ng-container *ngFor="let data of dataset">
@@ -45,14 +46,14 @@
                 </ng-container>
 
             </div>
-
-
-
         </div>
     </div>
 </ng-container>
 
+<!-- Add/Update Employee -->
+
 <ng-container *ngIf="isAddEnabled">
+
     <div class="container">
         <div class="wrapper">
             <div class="companyName">
@@ -86,9 +87,7 @@
                 </div>
 
             </div>
-
-
-
         </div>
     </div>
+
 </ng-container>
