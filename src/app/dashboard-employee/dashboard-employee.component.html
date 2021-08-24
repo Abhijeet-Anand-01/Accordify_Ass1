@@ -15,14 +15,12 @@
 
             <div class="gridDetails">
                 <ng-container *ngFor="let data of dataset">
-                    <ng-container *ngIf="data.employeeDetails.name.toLowerCase().trim().indexOf(searchEmployee.toLowerCase())>=0">
+                    <ng-container
+                        *ngIf="data.employeeDetails.name.toLowerCase().trim().indexOf(searchEmployee.toLowerCase())>=0">
                         <div class='card card-profile text-center'>
-                            <!-- <img alt='' class='card-img-top' src='https://unsplash.it/340/160?image=354'> -->
                             <img class='card-img-top' src="assets/profileBg2.png" alt="">
                             <div class='card-block'>
                                 <img class='card-img-profile' src="assets/profileLogo.png" alt="">
-                                <!-- <img alt='' class='card-img-profile'
-                                    src='https://it.gravatar.com/userimage/3434071/205a00fc16ae537b26b56f40790910fe.jpg?size=140'> -->
                                 <h2 class='card-title'>
                                     {{data.employeeDetails.name}}
                                 </h2>
@@ -59,13 +57,6 @@
             <div class="companyName">
                 <h1>Accordify</h1>
             </div>
-
-            <!-- <h1>{{type}} Employee</h1>
-    
-    <input type="text" [(ngModel)]="currentEmployee.employeeDetails.name">
-    
-    <button class="addEmployee" (click)="saveEmployee()">Save</button> -->
-
 
             <div class="formpage">
                 <header>
