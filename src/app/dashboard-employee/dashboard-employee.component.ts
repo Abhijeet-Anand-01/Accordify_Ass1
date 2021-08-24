@@ -19,19 +19,6 @@ export class DashboardEmployeeComponent implements OnInit {
   ngOnInit(): void {
     this.appService.getAllEmployeeDetails().subscribe((res: any) => {
       this.dataset = res;
-      // let newOrModData = this.appService.getData();
-      // if (newOrModData) {
-      //   if (newOrModData.employeeDetails.id) {
-      //     const index = this.dataset.findIndex(v => v.employeeDetails.id == newOrModData.employeeDetails.id);
-      //     console.log(index)
-      //     if (index >= 0)
-      //       this.dataset[index] = newOrModData;
-      //   } else {
-      //     newOrModData.employeeDetails.id = "E-id" + (this.dataset.length + 1);
-      //     newOrModData.laptopDetails.id = "L-id" + (this.dataset.length + 1);
-      //     this.dataset.push(newOrModData);
-      //   }
-      //   }
     })
   }
 
@@ -73,7 +60,7 @@ export class DashboardEmployeeComponent implements OnInit {
         newOrModData.employeeDetails.id = "E-id" + (this.dataset.length + 1);
         newOrModData.laptopDetails.id = "L-id" + (this.dataset.length + 1);
         this.dataset.push(newOrModData);
-        
+
         this.isAddEnabled = false;
       }
     }
