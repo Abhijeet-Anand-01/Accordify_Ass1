@@ -26,7 +26,8 @@ export class DashboardEmployeeComponent implements OnInit {
           if (index >= 0)
             this.dataset[index] = newOrModData;
         } else {
-          newOrModData.employeeDetails.id = "C-id" + (this.dataset.length + 1);
+          newOrModData.employeeDetails.id = "E-id" + (this.dataset.length + 1);
+          newOrModData.laptopDetails.id = "L-id" + (this.dataset.length + 1);
           this.dataset.push(newOrModData);
         }
       }

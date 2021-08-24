@@ -1,5 +1,45 @@
-<h1>{{type}} Employee</h1>
+<div class="container">
+    <div class="wrapper">
+        <div class="companyName">
+            <h1>Accordify</h1>
+        </div>
+
+        <!-- <h1>{{type}} Employee</h1>
 
 <input type="text" [(ngModel)]="currentEmployee.employeeDetails.name">
 
-<button class="addEmployee" (click)="saveEmployee()">Save</button>
+<button class="addEmployee" (click)="saveEmployee()">Save</button> -->
+
+
+        <div class="formpage">
+            <header>
+                <h1>{{type}} Employee</h1>
+            </header>
+
+            <div class="input-field">
+                <input class="field" type="text" placeholder="Employee Name"
+                    [(ngModel)]="currentEmployee.employeeDetails.name">
+            </div>
+
+            <div class="input-field">
+                <input class="field" type="text" placeholder="Laptop Name"
+                    [(ngModel)]="currentEmployee.laptopDetails.name">
+            </div>
+
+            <div class="logbutton">
+                <button (click)="saveEmployee()">Submit</button>
+            </div>
+
+            <div class="actions">
+                <button><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+            </div>
+            <div class="note">
+                <p><span>Note:</span> Employee Id and Laptop Id will be provided by us.</p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>

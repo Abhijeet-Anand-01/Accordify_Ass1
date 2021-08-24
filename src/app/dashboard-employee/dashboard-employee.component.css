@@ -11,7 +11,6 @@
     width: calc(100% - 124px);
     height: calc(100% - 100px);
     background: #fff;
-    background-color: #ebecf0;
     box-shadow: 0 30px 120px -15px rgb(0 0 0 / 20%);
 }
 
@@ -89,6 +88,9 @@
 }
 .card-profile .card-img-top {
     border-radius: 0;
+    
+    width: 340px;
+    height: 150px;
 }
 .card-profile .card-img-profile {
     max-width: 100%;

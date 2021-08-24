@@ -9,7 +9,7 @@ import { AppServiceService } from '../app-service.service';
 })
 export class AddEmployeeComponent implements OnInit {
 
-  public type = "Create";
+  public type = "Add";
   public currentEmployee: any = {
     "employeeDetails": {
       "name": "",
