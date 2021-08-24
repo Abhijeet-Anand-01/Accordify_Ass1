@@ -283,14 +283,8 @@ input:focus {
     font-weight: bold;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1600px) {
     .formpage {
-        box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
-        margin: auto;
-        margin-top: 10%;
-        /* background-color: #ebecf0; */
-        /* min-width: 40%; */
         width: 20vw;
-        height: 48vh;
     }
 }
