@@ -1,0 +1,102 @@
+[
+    {
+        "employeeDetails": {
+            "name": "Employee01",
+            "id": "C-id01"
+        },
+        "laptopDetails": {
+            "name": "Laptop01",
+            "id": "L-id01"
+        }
+    },
+    {
+        "employeeDetails": {
+            "name": "Employee02",
+            "id": "C-id02"
+        },
+        "laptopDetails": {
+            "name": "Laptop02",
+            "id": "L-id02"
+        }
+    },
+    {
+        "employeeDetails": {
+            "name": "Employee03",
+            "id": "C-id03"
+        },
+        "laptopDetails": {
+            "name": "Laptop03",
+            "id": "L-id03"
+        }
+    },
+    {
+        "employeeDetails": {
+            "name": "Employee04",
+            "id": "C-id04"
+        },
+        "laptopDetails": {
+            "name": "Laptop04",
+            "id": "L-id04"
+        }
+    },
+    {
+        "employeeDetails": {
+            "name": "Employee05",
+            "id": "C-id05"
+        },
+        "laptopDetails": {
+            "name": "Laptop05",
+            "id": "L-id05"
+        }
+    },
+    {
+        "employeeDetails": {
+            "name": "Employee06",
+            "id": "C-id06"
+        },
+        "laptopDetails": {
+            "name": "Laptop06",
+            "id": "L-id06"
+        }
+    },
+    {
+        "employeeDetails": {
+            "name": "Employee07",
+            "id": "C-id07"
+        },
+        "laptopDetails": {
+            "name": "Laptop07",
+            "id": "L-id07"
+        }
+    },
+    {
+        "employeeDetails": {
+            "name": "Employee08",
+            "id": "C-id08"
+        },
+        "laptopDetails": {
+            "name": "Laptop08",
+            "id": "L-id08"
+        }
+    },
+    {
+        "employeeDetails": {
+            "name": "Employee09",
+            "id": "C-id09"
+        },
+        "laptopDetails": {
+            "name": "Laptop09",
+            "id": "L-id09"
+        }
+    },
+    {
+        "employeeDetails": {
+            "name": "Employee10",
+            "id": "C-id10"
+        },
+        "laptopDetails": {
+            "name": "Laptop10",
+            "id": "L-id10"
+        }
+    }
+]

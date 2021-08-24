@@ -1,0 +1,160 @@
+.container {
+    height: 100vh;
+    /* margin: 50px 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    border-radius: 5px;
+    width: calc(100% - 124px);
+    height: calc(100% - 100px);
+    background: #fff;
+    background-color: #ebecf0;
+    box-shadow: 0 30px 120px -15px rgb(0 0 0 / 20%);
+}
+
+.companyName {
+    text-align: center;
+}
+
+.search {
+    margin-left: 47px;
+}
+
+.searchLabel {
+    font-size: 1.5rem;
+    padding-right: 10px;
+}
+.searchField {
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 100%;
+    border: none;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #fff;
+    transition: all 0.3s;
+}
+
+.searchField:focus {
+    box-shadow: inset 1px 1px 1px #babecc, inset -2px -2px 1px #fff;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.addEmployee {
+    float: right;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 45px;
+    border-radius: 5px;
+    margin-right: 50px;
+    border: none;
+    /* color: #62687e; */
+    /* background-color: #ebecf0; */
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+}
+
+.addEmployee:hover {
+    /* background-color: #ebecf0; */
+    cursor: pointer;
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+.addEmployee:active {
+    /* background-color: #ebecf0; */
+    box-shadow: inset 1px 1px 1px #babecc, inset -2px -2px 1px #fff;
+}
+.addEmployee:focus {
+    outline: none;
+}
+
+.gridDetails {
+    overflow-y: auto;
+    height: calc(100% - 126px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-profile {
+    width: 340px;
+    margin: 50px auto;
+    /* background-color: #e6e5e1; */
+    background-color: rgb(235 236 240);
+    border-radius: 0;
+    border: 0;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+    /* box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2); */
+    text-align: center;
+}
+.card-profile .card-img-top {
+    border-radius: 0;
+}
+.card-profile .card-img-profile {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: -95px;
+    width: 150px;
+    border: 5px solid #e6e5e1;
+}
+.card-profile .card-title {
+    margin: 0px;
+}
+.card-profile .employeeId {
+    font-size: 1.3rem;
+    margin-top: 5px;
+}
+.card-profile .card-desc {
+    margin: 0;
+}
+.card-profile .laptopId {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+.card-profile .card-links {
+    margin-bottom: 25px;
+}
+.card-profile .card-links .fa {
+    margin: 0 1em;
+    font-size: 1.6em;
+}
+.card-profile .card-links .fa:focus,
+.card-profile .card-links .fa:hover {
+    text-decoration: none;
+}
+.card-profile .card-links .fa.fa-times {
+    color: #ea4b89;
+    font-weight: bold;
+}
+.card-profile .card-links .fa.fa-times:hover {
+    color: #e51d6b;
+}
+.card-profile .card-links .fa.fa-edit {
+    color: #3b5999;
+}
+.card-profile .card-links .fa.fa-edit:hover {
+    color: #2d4474;
+}
+
+.iconBtn {
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    color: #62687e;
+    background-color: #ebecf0;
+    box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+}
+
+.iconBtn:hover {
+    cursor: pointer;
+    background-color: #ebecf0;
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+}
+.iconBtn:active {
+    background-color: #ebecf0;
+    box-shadow: inset 1px 1px 1px #babecc, inset -2px -2px 1px #fff;
+}
+.iconBtn:focus {
+    outline: none;
+}
